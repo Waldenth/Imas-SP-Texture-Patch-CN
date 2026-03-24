@@ -34,7 +34,7 @@
 
 ### ⚠️ 项目状态
 
-当前纹理包尚未完善，覆盖率仍在持续优化中。由于PSP游戏贴图的特性，PPSSPP需要在不同的场景才能Dump对应的纹理，由于偶像大师SP：
+当前纹理包尚未完善，覆盖率仍在持续优化中。由于PSP游戏贴图的特性，PPSSPP需要在不同的场景才能Dump对应的纹理，而又因为偶像大师SP：
 
 - 游戏场景众多，贴图分散加载
 - 同一贴图可能对应多个 Hash（裁剪 / 缩放等原因，可参考：[Texture sizes on the PSP](https://github.com/hrydgard/ppsspp/wiki/Texture-replacement-ini-syntax#texture-sizes-on-the-psp)）
@@ -83,6 +83,7 @@
 ```
 ├─textures.ini
 ├─new/
+├─missing/
 ├─bg/
 │  ├─down/
 │  └─up/
@@ -92,6 +93,7 @@
 - textures.ini：映射描述文件（为参与项目的主要的修改和提交Pr文件）
 - bg/up/：背景贴图上半部分，后缀0（接受补充Pr）
 - bg/down/：背景贴图下半部分，后缀1（接受补充Pr）
+- missing/：目前缺失高清素材的贴图纹理（接受补充Pr）
 - font/：高清字模（不接受Pr）
 - new/：PPSSPP导出的游戏低分辨率纹理图片，用于查找映射关系
 
